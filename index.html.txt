@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Leila ❤️</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to top, #ffdde1, #ee9ca7);
+        overflow: hidden;
+        text-align: center;
+        color: #fff;
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 3em;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 20px auto;
+        font-size: 1.2em;
+        line-height: 1.6;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    .heart {
+        font-size: 50px;
+        animation: pulse 1s infinite;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.2);}
+        100% {transform: scale(1);}
+    }
+
+    .flower {
+        position: absolute;
+        font-size: 24px;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {transform: translateY(-100px);}
+        100% {transform: translateY(100vh);}
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #fff;
+        color: #ee9ca7;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ffd1dc;
+    }
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday Leila 💖</h1>
+
+<p>
+My love, even if I’m far away today, my heart is with you.  
+You are the most beautiful part of my life, and I’m grateful for you every single day.  
+
+I know I made mistakes and hurt you, and I’m truly sorry.  
+But I want you to know that I love you deeply, and I’m trying to become better for you and for us.  
+
+Today is your day, and you deserve all the happiness, love, and peace in the world.  
+I miss you, I think about you, and I hope one day I can make you feel as special as you truly are.  
+
+Happy birthday my Leila ❤️
+</p>
+
+<div class="heart">❤️</div>
+
+<button onclick="showMessage()">Click me 💌</button>
+
+<script>
+function showMessage() {
+    alert("I love you more than words can explain ❤️");
+}
+
+// create falling flowers 🌸
+for (let i = 0; i < 30; i++) {
+    let flower = document.createElement("div");
+    flower.className = "flower";
+    flower.innerHTML = "🌸";
+    flower.style.left = Math.random() * 100 + "vw";
+    flower.style.animationDuration = (3 + Math.random() * 5) + "s";
+    document.body.appendChild(flower);
+}
+</script>
+
+</body>
+</html>
